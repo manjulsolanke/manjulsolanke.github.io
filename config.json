@@ -1,8 +1,8 @@
 [
  {
-  "username": "itsksaurabh",
-  "name": "Kumar Saurabh",
-  "userimg": "https://avatars2.githubusercontent.com/u/14794708?v=4",
+  "username": "manjulsolanke",
+  "name": "Manjul Solanke",
+  "userimg": "https://github.com/manjulsolanke/manjulsolanke/blob/main/myphoto.png?raw=true",
   "sort": "created",
   "order": "desc",
   "includeFork": false,
@@ -10,8 +10,8 @@
   "types": [
    "owner"
   ],
-  "twitter": "itsksaurabh",
-  "linkedin": "itsksaurabh",
+  "twitter": null,
+  "linkedin": "https://www.linkedin.com/in/manjulsolanke/",
   "medium": null,
   "dribbble": null
  }
