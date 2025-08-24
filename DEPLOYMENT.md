@@ -41,7 +41,7 @@ The project is configured with GitHub Actions for automatic deployment.
 
 3. **Access your site**
    - Once deployment is complete, your site will be available at:
-   - `https://manjulsolanke.github.io/manjulsolanke.github.io`
+   - `https://manjulsolanke.github.io`
 
 ### 3. Manual Deployment (Alternative)
 
@@ -71,7 +71,7 @@ If you prefer manual deployment:
    - If you still have issues, check that the 404.html file is in the public directory
 
 2. **Assets Not Loading**
-   - Ensure the base path in `vite.config.ts` is correct: `/manjulsolanke.github.io/`
+   - Ensure the base path in `vite.config.ts` is correct: `/`
    - Check that the homepage in `package.json` matches your repository name
 
 3. **Build Failures**

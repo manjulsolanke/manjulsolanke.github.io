@@ -14,8 +14,10 @@ export default defineConfig(({ mode }) => ({
     mode === 'development' &&
     componentTagger(),
   ].filter(Boolean),
-  // For GitHub Pages deployment, use the repository name as base
-  base: "/manjulsolanke.github.io/",
+  // For a user/organization page (repository named username.github.io) the site is served at
+  // https://<username>.github.io so base should be root '/'. Using an incorrect base causes
+  // built asset URLs to point to /manjulsolanke.github.io/... which breaks when served at the root.
+  base: "/",
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),

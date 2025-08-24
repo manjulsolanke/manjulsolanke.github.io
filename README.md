@@ -4,7 +4,7 @@ A professional portfolio website built with React, TypeScript, and Tailwind CSS,
 
 ## 🚀 Live Demo
 
-Visit the live site: [https://manjulsolanke.github.io/manjulsolanke.github.io](https://manjulsolanke.github.io/manjulsolanke.github.io)
+Visit the live site: [https://manjulsolanke.github.io](https://manjulsolanke.github.io)
 
 ## 🛠️ Technologies Used
 
@@ -80,7 +80,7 @@ This project is configured for automatic deployment to GitHub Pages using GitHub
 
 1. **Push to main branch** - The GitHub Actions workflow will automatically build and deploy your site
 2. **Check deployment status** - Go to the Actions tab in your repository
-3. **Access your site** - Your site will be available at `https://manjulsolanke.github.io/manjulsolanke.github.io`
+3. **Access your site** - Your site will be available at `https://manjulsolanke.github.io`
 
 ### Manual Deployment
 
