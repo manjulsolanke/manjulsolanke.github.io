@@ -1,4 +1,0 @@
-title: Hacker theme
-description: Hacker is a theme for GitHub Pages.
-theme: jekyll-theme-hacker
-gem "github-pages", group: :jekyll_plugins

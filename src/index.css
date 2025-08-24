@@ -1,0 +1,209 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Professional Portfolio Design System */
+
+@layer base {
+  :root {
+    /* Base colors - professional palette */
+    --background: 0 0% 100%;
+    --foreground: 215 25% 27%;
+
+    /* Card system */
+    --card: 0 0% 100%;
+    --card-foreground: 215 25% 27%;
+
+    /* Popover system */
+    --popover: 0 0% 100%;
+    --popover-foreground: 215 25% 27%;
+
+    /* Professional primary - deep navy */
+    --primary: 215 28% 17%;
+    --primary-foreground: 0 0% 100%;
+    --primary-glow: 215 40% 25%;
+
+    /* Secondary - refined gray */
+    --secondary: 210 20% 98%;
+    --secondary-foreground: 215 25% 27%;
+
+    /* Muted tones */
+    --muted: 210 20% 98%;
+    --muted-foreground: 215 13% 65%;
+
+    /* Accent - sophisticated blue */
+    --accent: 211 100% 50%;
+    --accent-light: 211 100% 95%;
+    --accent-foreground: 0 0% 100%;
+
+    /* Semantic colors */
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+    --success: 142 76% 36%;
+    --success-foreground: 0 0% 100%;
+
+    /* Border and input */
+    --border: 210 20% 90%;
+    --input: 210 20% 96%;
+    --ring: 211 100% 50%;
+
+    --radius: 0.75rem;
+
+    /* Gradients for modern appeal */
+    --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-glow)));
+    --gradient-accent: linear-gradient(135deg, hsl(var(--accent)), hsl(var(--accent-light)));
+    --gradient-subtle: linear-gradient(180deg, hsl(var(--background)), hsl(var(--secondary)));
+
+    /* Shadows for depth */
+    --shadow-elegant: 0 10px 30px -10px hsl(var(--primary) / 0.1);
+    --shadow-glow: 0 0 40px hsl(var(--accent) / 0.15);
+    --shadow-card: 0 4px 20px -2px hsl(var(--primary) / 0.08);
+
+    /* Animation values */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    scroll-behavior: smooth;
+  }
+
+  /* Typography scale */
+  h1 {
+    @apply text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight;
+  }
+
+  h2 {
+    @apply text-3xl md:text-4xl font-bold tracking-tight;
+  }
+
+  h3 {
+    @apply text-2xl md:text-3xl font-semibold tracking-tight;
+  }
+
+  h4 {
+    @apply text-xl md:text-2xl font-semibold tracking-tight;
+  }
+}
+
+@layer components {
+  /* Hero gradient text */
+  .gradient-text {
+    @apply bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent;
+  }
+
+  /* Card with elegant shadow */
+  .card-elegant {
+    @apply bg-card rounded-lg border shadow-[var(--shadow-card)] transition-[var(--transition-smooth)];
+  }
+
+  .card-elegant:hover {
+    @apply shadow-[var(--shadow-elegant)] -translate-y-1;
+  }
+
+  /* Gradient button */
+  .btn-gradient {
+    @apply bg-gradient-to-r from-primary to-primary-glow text-primary-foreground font-semibold;
+    @apply px-6 py-3 rounded-lg transition-[var(--transition-smooth)] shadow-lg;
+  }
+
+  .btn-gradient:hover {
+    @apply shadow-[var(--shadow-glow)] scale-105;
+  }
+
+  /* Professional section spacing */
+  .section-padding {
+    @apply py-16 md:py-24 lg:py-32;
+  }
+
+  .container-padding {
+    @apply px-4 md:px-6 lg:px-8;
+  }
+
+  /* Smooth reveal animation */
+  .fade-in-up {
+    @apply opacity-0 translate-y-8 transition-all duration-700 ease-out;
+  }
+
+  .fade-in-up.in-view {
+    @apply opacity-100 translate-y-0;
+  }
+
+  /* Timeline styles */
+  .timeline-item::before {
+    @apply absolute left-0 top-0 w-4 h-4 bg-accent rounded-full;
+    content: '';
+    transform: translateX(-50%);
+  }
+
+  .timeline-item::after {
+    @apply absolute left-0 top-4 w-0.5 h-full bg-border;
+    content: '';
+    transform: translateX(-50%);
+  }
+
+  .timeline-item:last-child::after {
+    @apply hidden;
+  }
+}
