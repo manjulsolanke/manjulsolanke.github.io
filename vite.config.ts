@@ -14,7 +14,8 @@ export default defineConfig(({ mode }) => ({
     mode === 'development' &&
     componentTagger(),
   ].filter(Boolean),
-  base: "/manjulsolanke.github.io",
+  // For GitHub Pages deployment, use the repository name as base
+  base: "/manjulsolanke.github.io/",
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
