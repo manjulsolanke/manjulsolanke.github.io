@@ -1,10 +1,6 @@
 {
   "name": "vite_react_shadcn_ts",
-<<<<<<< HEAD
   "homepage": "https://manjulsolanke.github.io/manjulsolanke.github.io",
-=======
-  "homepage": "https://manjulsolanke.github.io",
->>>>>>> 28ecfee0069826a76dbaf2c62b3596952f090373
   "private": true,
   "version": "0.0.0",
   "type": "module",
